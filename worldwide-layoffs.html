@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Worldwide Layoffs Analysis | Swarupa Golla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: { extend: { fontFamily: { sans:['Roboto','ui-sans-serif','system-ui'] } } }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header (reuse your header markup) -->
+
+  <section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-6 space-y-8">
+      <!-- Title + GitHub Link -->
+      <div class="space-y-2">
+        <h1 class="text-4xl font-bold text-zinc-600">Worldwide Layoffs Analysis</h1>
+        <a 
+          href="https://github.com/Swarupa2025/SQL-world_layoffs-analysis" 
+          target="_blank"
+          class="inline-flex items-center text-sm font-medium text-blue-600 hover:underline"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.64.5.5 5.64.5 12c0 5.08 3.29 9.39 7.84 10.91.57.1.78-.25.78-.56 0-.28-.01-1.02-.02-2-3.19.69-3.87-1.54-3.87-1.54-.52-1.34-1.28-1.69-1.28-1.69-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.05 11.05 0 012.9-.39c.98.01 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.57.24 2.73.12 3.02.74.81 1.19 1.84 1.19 3.1 0 4.43-2.69 5.4-5.25 5.68.41.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .31.21.67.79.56A10.51 10.51 0 0023.5 12c0-6.36-5.14-11.5-11.5-11.5z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+
+      <!-- The Challenge -->
+      <div class="space-y-2">
+        <h2 class="text-2xl font-semibold">The Challenge</h2>
+        <p>
+          I inherited a messy <code>layoffs.csv</code>—duplicates, inconsistent categories, blank dates, and mixed formats—yet stakeholders urgently needed clear trends on who, where, and when layoffs hit hardest.
+        </p>
+      </div>
+
+      <!-- My Approach -->
+      <div class="space-y-2">
+        <h2 class="text-2xl font-semibold">My Approach</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Created a staging table and used window functions to identify and remove duplicate rows (<code>World_layoffs_Data_Cleaning.sql</code>).</li>
+          <li>Standardized categorical fields—trimming whitespace, unifying industry names, correcting misspellings, and converting date strings to proper <code>DATE</code> types.</li>
+          <li>Replaced blanks with <code>NULL</code>, then backfilled missing industry values via self-joins—ensuring no data gaps remained.</li>
+          <li>Ran exploratory SQL (<code>World_layoffs_EDA.sql</code>) to surface top companies, industries, and countries by total layoffs, built rolling monthly totals, and ranked yearly leaders.</li>
+        </ul>
+      </div>
+
+      <!-- Results & Impact -->
+      <div class="space-y-2">
+        <h2 class="text-2xl font-semibold">Results &amp; Impact</h2>
+        <p>
+          The cleaned dataset powered a rich EDA—revealing the top-5 most impacted companies each year, identifying crypto and tech as the hardest-hit industries, and mapping global layoff waves over time. This work not only honed my SQL mastery (CTEs, window functions, date transforms) but gave leadership the real-time insights they needed to monitor workforce trends and make proactive decisions.
+        </p>
+      </div>
+
+      <a href="portfolioprojects.html" class="inline-block mt-4 text-blue-600 hover:underline">
+        &larr; Back to Portfolio
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer (reuse your footer) -->
+
+</body>
+</html>

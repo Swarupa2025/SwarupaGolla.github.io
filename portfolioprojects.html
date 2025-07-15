@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Swarupa Golla</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Roboto','ui-sans-serif','system-ui'],
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Header (reuse your header markup) -->
+  <header class="bg-white shadow-md sticky top-0 z-20">
+    <div class="max-w-5xl mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-2xl font-bold">Swarupa Golla</h1>
+      <nav class="space-x-6 font-medium">
+        <a href="swarupa.html" class="hover:text-blue-600">Home</a>
+        <a href="portfolioprojects.html" class="text-black">Portfolio</a>
+        <a href="blog.html" class="hover:text-blue-600">Blog</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
+        <a href="Resume/Swarupa_Golla_Data Analyst_Resume.pdf" target="_blank" class="text-black hover:text-blue-600 transition text-blue-600">RESUME</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portfolio Grid -->
+<section class="py-12 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-8 text-blue-600">My Projects</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      
+
+      
+
+            <!-- Worldwide Layoffs Analysis (Zinc Accent) -->
+<a href="worldwide-layoffs.html"
+   class="block bg-zinc-50 p-6 rounded-lg shadow hover:bg-zinc-100 transition">
+  <img src="/images/layoffs-icon.svg"
+       alt="Worldwide Layoffs Analysis"
+       class="w-16 h-16 mx-auto mb-4"/>
+  <h3 class="text-xl font-semibold text-center">Worldwide Layoffs Analysis</h3>
+  <p class="mt-2 text-sm text-center text-gray-600">
+    Data cleaning & exploratory analysis of global layoffs dataset
+  </p>
+  <div class="mt-4 flex flex-wrap justify-center gap-2">
+          <span class="bg-zinc-100 text-zinc-600 text-xs px-2 py-1 rounded-full">Python</span>
+          <span class="bg-zinc-100 text-zinc-600 text-xs px-2 py-1 rounded-full">SQL</span>
+        </div>
+</a>
+
+
+              <!-- Sustainable Shipping Optimization (Green Accent) -->
+      <a href="sustainable-shipping.html"
+         class="block bg-green-50 p-6 rounded-lg shadow hover:bg-green-100 transition">
+        <img src="/images/shipping-icon.svg"
+             alt="Sustainable Shipping Optimization"
+             class="w-16 h-16 mx-auto mb-4"/>
+        <h3 class="text-xl font-semibold text-center">Sustainable Shipping Optimization</h3>
+        <p class="mt-2 text-sm text-center text-gray-600">
+          Multi-vendor logistics emissions vs. cost analysis
+        </p>
+        <!-- Tools Badges -->
+        <div class="mt-4 flex flex-wrap justify-center gap-2">
+          <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Python</span>
+          <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">SQL</span>
+          <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Tableau</span>
+          <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Linear Regression</span>
+        </div>
+      </a>
+
+            <!-- Real-Time Retail Forecasting (Blue Accent) -->
+      <a href="retail-forecasting.html"
+         class="block bg-blue-50 p-6 rounded-lg shadow hover:bg-blue-100 transition">
+        <img src="/images/retail-forecast-icon.svg"
+             alt="Real-Time Retail Sales Forecasting"
+             class="w-16 h-16 mx-auto mb-4"/>
+        <h3 class="text-xl font-semibold text-center">Retail Sales Forecasting</h3>
+        <p class="mt-2 text-sm text-center text-gray-600">
+          SKU-level ARIMA & Prophet pipeline on AWS Redshift
+        </p>
+        <div class="mt-4 flex flex-wrap justify-center gap-2">
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Python</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">SQL</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">ARIMA</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Prophet</span>
+          <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">AWS Redshift</span>
+        </div>
+      </a>
+
+      <!-- Email Campaign Personalization (Purple Accent) -->
+      <a href="email-campaign.html"
+         class="block bg-purple-50 p-6 rounded-lg shadow hover:bg-purple-100 transition">
+        <img src="/images/email-campaign-icon.svg"
+             alt="Email Campaign Personalization"
+             class="w-16 h-16 mx-auto mb-4"/>
+        <h3 class="text-xl font-semibold text-center">Email Campaign Personalization</h3>
+        <p class="mt-2 text-sm text-center text-gray-600">
+          A/B testing & multi-touch attribution in QuickSight
+        </p>
+        <!-- Tools Badges -->
+        <div class="mt-4 flex flex-wrap justify-center gap-2">
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Python</span>
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">SQL</span>
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">SciPy</span>
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">QuickSight</span>
+          <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Excel</span>
+        </div>
+      </a>
+
+      <!-- (Optional) Add more cards here following the same pattern -->
+    </div>
+  </div>
+</section>
+
+ 
+
+
+  <!-- Footer (reuse your footer) -->
+  <footer class="bg-gray-100 py-6">
+    <div class="max-w-5xl mx-auto px-6 text-center text-sm">
+      &copy; 2025 Swarupa Golla. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
